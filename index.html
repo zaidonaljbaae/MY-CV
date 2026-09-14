@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Resume - Zaidon</title>
-  <meta content=" resume website built using HTML, CSS, JS and Bootstrap5" name="description">
-  <meta content="web designer, web developer, website, freelancer" name="keywords">
+  <title>Zaidon Aljbaae - Web Developer</title>
+  <meta content="Zaidon Aljbaae - Web Developer resume and portfolio. Frontend, API integration, React.js, Python/Flask, AWS, and robotics/automation background." name="description">
+  <meta content="web developer, frontend developer, react developer, api integration, flask, aws, automation, arduino, plc, resume, portfolio" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -26,26 +26,112 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Custom additions: language switcher, tech tags, project links -->
+  <style>
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin: 18px 0 6px;
+    }
+
+    .lang-switch button {
+      background: transparent;
+      border: 1px solid #0563bb;
+      color: #0563bb;
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: #0563bb;
+      color: #fff;
+    }
+
+    .skills-subtitle {
+      margin: 18px 0 10px;
+      font-weight: 600;
+      color: #0563bb;
+    }
+
+    .tech-tag {
+      display: inline-block;
+      margin: 2px 6px 6px 0;
+      padding: 3px 12px;
+      font-size: 13px;
+      border-radius: 20px;
+      background: #eef3fa;
+      color: #0563bb;
+      border: 1px solid #cfe0f5;
+    }
+
+    .project-links {
+      margin-top: 10px;
+    }
+
+    .project-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-right: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0563bb;
+      text-decoration: none;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .projects-group-title {
+      margin: 10px 0 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 18px;
+      color: #45505b;
+      border-left: 4px solid #0563bb;
+      padding-left: 10px;
+    }
+
+    .project-note {
+      font-size: 13px;
+      color: #728394;
+      font-style: italic;
+    }
+  </style>
+
 </head>
 
 <body>
 
 <!-- ======= Mobile nav toggle button ======= -->
-<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
 <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex flex-column justify-content-center">
 
   <nav id="navbar" class="navbar nav-menu">
     <ul>
-      <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-      <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>skills</span></a></li>
-      <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>resume</span></a></li>
-      <li><a href="#Project" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Project</span></a></li>
-      <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span data-i18n="nav.home">Home</span></a></li>
+      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n="nav.about">About</span></a></li>
+      <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span data-i18n="nav.skills">Skills</span></a></li>
+      <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav.resume">Resume</span></a></li>
+      <li><a href="#Project" class="nav-link scrollto"><i class="bx bx-server"></i> <span data-i18n="nav.project">Projects</span></a></li>
+      <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
     </ul>
   </nav><!-- .nav-menu -->
+
+  <div class="lang-switch">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="pt">PT</button>
+  </div>
 
 </header><!-- End Header -->
 
@@ -53,12 +139,14 @@
 <section id="hero" class="d-flex flex-column justify-content-center">
   <div class="container" data-aos="zoom-in" data-aos-delay="100">
     <h1>ZAIDON  ALJBAAE</h1>
-    <p>I WORK ON <span class="typed" data-typed-items=" Python , Flask , PHP / Laravel , React , Micro Controller Project , Maintenance  "></span></p>
+    <p data-i18n="hero.role">Web Developer &middot; Frontend &amp; API Integration</p>
+    <p>I WORK ON <span class="typed" data-typed-items="React.js , Flask , Node.js , AWS , PHP / Laravel , PLC &amp; Arduino"></span></p>
     <div class="social-links">
+      <a href="https://github.com/zaidonaljbaae" target="_blank" rel="noopener" class="github"><i class="bx bxl-github"></i></a>
+      <a href="https://www.linkedin.com/in/zaidon-aljbaae-babb86365" target="_blank" rel="noopener" class="linkedin"><i class="bx bxl-linkedin-square"></i></a>
       <a href="https://www.facebook.com/zaidon.aljbaae" class="facebook"><i class="bx bxl-facebook"></i></a>
       <a href="https://instagram.com/zaidon_aljbaae?igshid=ZDdkNTZiNTM=" class="instagram"><i class="bx bxl-instagram"></i></a>
       <a href="https://t.me/ZaidonAljbaae" class="telegram"><i class="bx bxl-telegram"></i></a>
-
     </div>
   </div>
 </section><!-- End Hero -->
@@ -68,34 +156,39 @@
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>About</h2>
+        <h2 data-i18n="about.title">About</h2>
       </div>
-      <h5>Highly motivated in Computer and Automation Engineer and Web Developer.
-        Processing a Bachelor of Science in Computer Engineering from Damascus
-        University, as well as a certification in Control and Automation Engineering,
-        <br> and a web development bootcamp. Skilled in programming languages such as C,
-        Python, and experienced with control systems and automation tools such as
-        PLC, and web development technologies such as HTML, CSS, and JavaScript.
+      <h5 data-i18n="about.bio">
+        Web Developer with hands-on experience building and maintaining responsive, easy-to-use web applications.
+        Strong in HTML, CSS, JavaScript and React.js, with practical experience integrating and consuming backend
+        REST APIs and managing the data exchange between frontend and backend. I write clean, maintainable,
+        well-documented code focused on performance, scalability and cross-browser compatibility, and work
+        effectively and independently in remote, distributed teams. My background in Computer &amp; Automation
+        Engineering &mdash; with hands-on experience in Arduino, sensors, PLCs and embedded systems &mdash; gives me
+        a solid foundation in hardware-software integration, control systems and problem solving. Fluent English;
+        native Arabic.
       </h5>
       <br>
       <div class="row">
         <div class="col-lg-4">
-          <img src="assets/img/zaidon.jpg" class="img-fluid" alt=>
+          <img src="assets/img/zaidon.jpg" class="img-fluid" alt="Zaidon Aljbaae">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content">
-          <h3>FreeLancer</h3>
-          <h5> I am now looking for a new and challenging position that will allow me to make
-            the best use of existing skills and experience and give me the opportunity to
-            take on other responsibilities and be more professional.
+          <h3 data-i18n="about.subtitle">Full-Stack &amp; Frontend Developer</h3>
+          <h5 data-i18n="about.looking">
+            I'm currently focused on frontend development and API integration, looking for new opportunities to
+            apply my skills in React.js, backend integration and cloud deployment, while continuing to grow as a
+            well-rounded full-stack engineer.
           </h5>
           <br><br>
           <div class="row">
             <ul>
-              <h5><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> 1 Jan 1998</h5><br>
-              <h5><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> +55 12 997963819</h5><br>
-              <h5><i class="bi bi-chevron-right"></i> <strong>City:</strong> Pindamonhangaba-SP, Brazil</h5><br>
-              <h5><i class="bi bi-chevron-right"></i> <strong>Age:</strong> 25</h5><br>
-              <h5><i class="bi bi-chevron-right"></i> <strong>E-Mail:</strong> <a href = "mailto:ZaidonAljbaae@gmail.com">ZaidonAljbaae@gmail.com</a></h5><br>
+              <h5><i class="bi bi-chevron-right"></i> <strong data-i18n="about.label.birthday">Birthday:</strong> 1 Jan 1998</h5><br>
+              <h5><i class="bi bi-chevron-right"></i> <strong data-i18n="about.label.nationality">Nationality:</strong> <span data-i18n="about.value.nationality">Syrian</span></h5><br>
+              <h5><i class="bi bi-chevron-right"></i> <strong data-i18n="about.label.phone">Phone:</strong> +55 12 997963819</h5><br>
+              <h5><i class="bi bi-chevron-right"></i> <strong data-i18n="about.label.city">City:</strong> Pindamonhangaba-SP, Brazil</h5><br>
+              <h5><i class="bi bi-chevron-right"></i> <strong data-i18n="about.label.email">E-Mail:</strong> <a href="mailto:ZaidonAljbaae@gmail.com">ZaidonAljbaae@gmail.com</a></h5><br>
+              <h5><i class="bi bi-chevron-right"></i> <strong data-i18n="about.label.github">GitHub:</strong> <a href="https://github.com/zaidonaljbaae" target="_blank" rel="noopener">github.com/zaidonaljbaae</a></h5><br>
             </ul>
           </div>
         </div>
@@ -108,69 +201,95 @@
     <div class="container" data-aos="fade-up">
       <div>
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2 data-i18n="skills.title">Skills</h2>
         </div>
-        <h2>Soft skills : </h2>
-        <h5>- Team Planning / Teamwork </h5>
-        <h5>- Adaptability </h5>
-        <h5>- communication </h5>
-        <h5>- problem solving </h5>
-        <h2>Technical skills : </h2>
+        <h2 data-i18n="skills.soft.title">Soft Skills:</h2>
+        <h5 data-i18n="skills.soft.1">- Teamwork / Team Planning</h5>
+        <h5 data-i18n="skills.soft.2">- Adaptability</h5>
+        <h5 data-i18n="skills.soft.3">- Clear communication</h5>
+        <h5 data-i18n="skills.soft.4">- Problem solving</h5>
+        <h5 data-i18n="skills.soft.5">- Attention to detail</h5>
+        <h2 data-i18n="skills.tech.title">Technical Skills:</h2>
         <div class="row skills-content">
 
           <div class="col-lg-6">
-
+            <h5 class="skills-subtitle" data-i18n="skills.group.frontend">Frontend</h5>
             <div class="progress">
-              <span class="skill">HTML, CSS, JavaScript <i class="val">70%</i></span>
+              <span class="skill">HTML5, CSS3, JavaScript (ES6+) <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PHP/laravel <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="progress">
-              <span class="skill">PYTHON <i class="val">85%</i></span>
+              <span class="skill">React.js, Redux, React Hook Form, Material UI <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <h5 class="skills-subtitle" data-i18n="skills.group.backend">Backend &amp; APIs</h5>
+            <div class="progress">
+              <span class="skill">Python (Flask, SQLAlchemy) <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="progress">
-              <span class="skill">c/c++ <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">Arduino <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill"> plc <i class="val">80%</i></span>
+              <span class="skill">Node.js / Express.js, PHP (Laravel) <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
+            <h5 class="skills-subtitle" data-i18n="skills.group.cloud">Cloud &amp; DevOps</h5>
             <div class="progress">
-              <span class="skill">Microsoft office , Windows, Internet <i class="val">100%</i></span>
+              <span class="skill">AWS (EC2, Lambda, S3, RDS, CloudFront, API Gateway) <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="progress">
-              <span class="skill">Linux <i class="val">60%</i></span>
+              <span class="skill">Docker, CI/CD, MySQL / PostgreSQL <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="skills-subtitle" data-i18n="skills.group.robotics">Robotics &amp; Electronics</h5>
+            <div class="progress">
+              <span class="skill">Arduino, C / C++ <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Sensors, Actuators, Computer Vision <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <h5 class="skills-subtitle" data-i18n="skills.group.automation">Industrial Automation</h5>
+            <div class="progress">
+              <span class="skill">PLC / Ladder Logic Programming <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <h5 class="skills-subtitle" data-i18n="skills.group.tools">Tools &amp; OS</h5>
+            <div class="progress">
+              <span class="skill">Git / GitHub, Linux <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Microsoft Office, Windows <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -179,35 +298,64 @@
     </div>
   </section><!-- End Skills Section -->
 
-  <!-- ======= Education Section ======= -->
+  <!-- ======= Education / Resume Section ======= -->
   <section id="resume" class="resume">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>Resume</h2>
+        <h2 data-i18n="resume.title">Resume</h2>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="resume-title">Education</h3>
+          <h3 class="resume-title" data-i18n="resume.education">Education</h3>
           <div class="resume-item">
-            <h4>Bachelor of computer and automation engineering </h4>
-            <h5> 2015 - 2024</h5>
+            <h4 data-i18n="resume.edu1.title">Computer &amp; Automation Engineering (Incomplete)</h4>
+            <h5>2015 - 2023</h5>
             <br>
-            <em>University of Damascus, Syria.
+            <em>University of Damascus, Syria. <span data-i18n="resume.edu1.specialty">Specialty: Control and Automation Engineering.</span>
               <br>
-              Specialty : control and automation engineering</em>
+              <span data-i18n="resume.edu1.desc">Coursework completed through the final year; not concluded due to international relocation. Solid foundation in embedded systems, control system design and industrial automation.</span>
+            </em>
           </div>
           <div class="resume-item">
-            <h4>General Baccalaureate</h4>
-            <h5>2014 - 2015</h5>
-            <p><em>Swaida, Syria.
+            <h4 data-i18n="resume.edu2.title">Network Infrastructure Deployment &amp; Administration</h4>
+            <h5>2024 - 2025</h5>
+            <p><em>Senac Pindamonhangaba, Brazil &middot; 402h.
               <br>
-              Topic: Scientic Section. </em> </p>
-            <br><br><br><br><br><br><br><br>
+              <span data-i18n="resume.edu2.desc">402-hour program covering wired/wireless network planning and deployment, routing &amp; switching, LAN/WAN configuration, systems security and server maintenance.</span>
+            </em></p>
           </div>
-          <h3 class="resume-title">Languages</h3>
+
+          <h3 class="resume-title" data-i18n="resume.certs">Certifications &amp; Courses</h3>
           <div class="resume-item">
-            <h4>Arabic</h4>
-            <h5>Native</h5>
+            <h4>The Complete Web Development Bootcamp</h4>
+            <h5>Udemy &middot; 65h &middot; 2024 - 2025</h5>
+            <p><em data-i18n="resume.cert1.desc">Full-stack fundamentals: HTML, CSS, JavaScript, Node.js, databases and complete application builds.</em></p>
+          </div>
+          <div class="resume-item">
+            <h4 data-i18n="resume.cert2.title">Basic PLC &amp; Ladder Programming</h4>
+            <h5>Centro Omari, Damascus, Syria &middot; 72h &middot; 2019</h5>
+            <p><em data-i18n="resume.cert2.desc">Ladder Logic fundamentals: outputs, logic gates, SET/RST, timers, counters, control structures and PWM, applied to practical examples.</em></p>
+          </div>
+          <div class="resume-item">
+            <h4 data-i18n="resume.cert3.title">Technical Support Training</h4>
+            <h5>IECD Jaramana, Damascus, Syria &middot; 70h &middot; 2019</h5>
+            <p><em data-i18n="resume.cert3.desc">Hardware troubleshooting, network/internet connectivity issues, and CCTV (DVR/NVR) system management.</em></p>
+          </div>
+          <div class="resume-item">
+            <h4 data-i18n="resume.cert4.title">Computer Maintenance Training</h4>
+            <h5>IECD Jaramana, Damascus, Syria &middot; 37h &middot; 2019</h5>
+            <p><em data-i18n="resume.cert4.desc">Computer assembly, software installation, OS configuration, and hardware/software troubleshooting.</em></p>
+          </div>
+          <div class="resume-item">
+            <h4 data-i18n="resume.cert5.title">General Baccalaureate (Scientific Track)</h4>
+            <h5>Shakib Arslan, Swaida, Syria &middot; 2015</h5>
+            <p><em data-i18n="resume.cert5.desc">Scientific track covering mathematics, physics and chemistry. Score: 89.38%.</em></p>
+          </div>
+
+          <h3 class="resume-title" data-i18n="resume.languages">Languages</h3>
+          <div class="resume-item">
+            <h4 data-i18n="resume.lang.arabic">Arabic</h4>
+            <h5 data-i18n="resume.lang.native">Native</h5>
             <div class="skills section-bg">
               <div class="row skills-content">
                 <div class="progress">
@@ -221,14 +369,14 @@
             </div>
           </div>
           <div class="resume-item">
-            <h4>English</h4>
-            <h5>Fluent</h5>
+            <h4 data-i18n="resume.lang.english">English</h4>
+            <h5 data-i18n="resume.lang.fluent">Fluent</h5>
             <div class="skills section-bg">
               <div class="row skills-content">
                 <div class="progress">
-                  <span class="skill"><i class="val">70%</i></span>
+                  <span class="skill"><i class="val">85%</i></span>
                   <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                     </div>
                   </div>
                 </div>
@@ -236,14 +384,14 @@
             </div>
           </div>
           <div class="resume-item">
-            <h4>portuguese</h4>
-            <h5>Intermediate</h5>
+            <h4 data-i18n="resume.lang.portuguese">Portuguese</h4>
+            <h5 data-i18n="resume.lang.intermediate">Intermediate</h5>
             <div class="skills section-bg">
               <div class="row skills-content">
                 <div class="progress">
-                  <span class="skill"><i class="val">40%</i></span>
+                  <span class="skill"><i class="val">50%</i></span>
                   <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                     </div>
                   </div>
                 </div>
@@ -252,70 +400,49 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
+          <h3 class="resume-title" data-i18n="resume.experience">Professional Experience</h3>
+
           <div class="resume-item">
-            <h4>Junior Full-Stack Developer</h4>
+            <h4 data-i18n="resume.job1.title">Full-Stack Web Developer</h4>
+            <h5>Make the Way &middot; <span data-i18n="resume.job1.location">Remote, São Paulo, Brazil</span> &middot; Nov 2024 - <span data-i18n="resume.job1.present">Present</span></h5>
             <ul>
-              <li>
-                Worked at Make the Way as a Full-Stack Developer, managing AWS servers, developing scalable backend solutions, and utilizing Python libraries like SQLAlchemy, Pandas, and NumPy for efficient data handling. Built and deployed dynamic, responsive web applications using React for the frontend.
-              </li>
-              <li>
-                Proficient in HTML, CSS, and JavaScript, with expertise in frameworks such as React, Node.js, and Express to build dynamic, responsive, and interactive web applications.
-              </li>
-              <li>
-                Experienced with Laravel, utilizing the Model-View-Controller (MVC) architecture to develop modular, scalable web applications. Implemented RESTful APIs, optimized database interactions, and integrated Composer libraries such as Spatie and Permission for advanced role management and access control, enhancing the security and functionality of web applications.
-              </li>
+              <li data-i18n="resume.job1.b1">Build and maintain responsive, user-friendly web applications with React.js (Hooks, Context API, Refs) and Material UI, ensuring cross-browser compatibility.</li>
+              <li data-i18n="resume.job1.b2">Manage application state with Redux and build complex forms with React Hook Form; integrate the frontend with AWS Amplify for file storage and user authentication.</li>
+              <li data-i18n="resume.job1.b3">Develop and maintain scalable, secure backend services with Python (Flask, SQLAlchemy), integrating databases and processing data with Pandas and NumPy.</li>
+              <li data-i18n="resume.job1.b4">Work with a microservices architecture, implementing RESTful APIs through API Gateway and AWS Lambda triggers, including internal automations such as email reading/processing systems and Windows RPA bots.</li>
+              <li data-i18n="resume.job1.b5">Configure and manage AWS infrastructure (EC2, S3, CloudFront, Elastic Beanstalk) with Docker containers and CI/CD pipelines, collaborating with cross-functional teams to ship robust, scalable solutions.</li>
             </ul>
           </div>
-          
+
           <div class="resume-item">
-            <h4>Junior Python Developer</h4>
+            <h4 data-i18n="resume.job2.title">Backend Developer</h4>
+            <h5>Xcore Corporation &middot; Swaida, Syria &middot; Apr 2022 - Jun 2023</h5>
             <ul>
-              <li>
-                Accomplished in developing Python applications with expertise spanning various development domains.
-              </li>
-              <li>
-                Experience in leveraging Python to develop internet applications, adeptly managing web and API routes using Flask for seamless backend operations.
-              </li>
-              <li>
-                Skilled in comprehensive data analysis using Pandas, extracting meaningful insights to drive informed decision-making.
-              </li>
-              <li>
-                Proficient in web scraping using Beautiful Soup and Selenium to automate data collection and streamline repetitive tasks.
-              </li>
+              <li data-i18n="resume.job2.b1">Developed and consumed REST APIs with PHP (Laravel) and JavaScript, managing web/API routes, middlewares and MySQL integration.</li>
+              <li data-i18n="resume.job2.b2">Built responsive, cross-browser, user-friendly interfaces with Bootstrap.</li>
+              <li data-i18n="resume.job2.b3">Used Composer packages (e.g. Spatie) to add roles/permissions and speed up delivery.</li>
             </ul>
           </div>
-          
+
           <div class="resume-item">
-            <h4>Technical Support</h4>
+            <h4 data-i18n="resume.job3.title">Technical Support</h4>
             <ul>
-              <li>
-                knowledge in various aspects of Information Technology, including troubleshooting computer hardware, Internet issues, and network components such as cables, routers, and switches.              </li>
-              <li>
-                skills in managing and maintaining CCTV camera systems, including DVR and NVR configurations.
-              </li>
+              <li data-i18n="resume.job3.b1">Knowledge in various aspects of Information Technology, including troubleshooting computer hardware, internet issues, and network components such as cables, routers, and switches.</li>
+              <li data-i18n="resume.job3.b2">Skills in managing and maintaining CCTV camera systems, including DVR and NVR configurations.</li>
             </ul>
           </div>
           <div class="resume-item">
-            <h4>Computer Maintenenance</h4>
+            <h4 data-i18n="resume.job4.title">Computer Maintenance</h4>
             <ul>
-              <li>
-                Proficient in setting up computers, handling software installations, and configuring operating systems.
-              </li>
-              <li>
-                hardware and software issues solver, various power supply units, essential components.
-              </li>
+              <li data-i18n="resume.job4.b1">Proficient in setting up computers, handling software installations, and configuring operating systems.</li>
+              <li data-i18n="resume.job4.b2">Hardware and software issue solver, familiar with various power supply units and essential components.</li>
             </ul>
           </div>
           <div class="resume-item">
-            <h4>Industrial Controls</h4>
+            <h4 data-i18n="resume.job5.title">Industrial Controls</h4>
             <ul>
-              <li>
-                Proficient in working with classic controller systems, adeptly managing Contactor, Relay, Sensors, and Timers.
-              </li>
-              <li>
-                Skills in PLC with expertise in Ladder Programming Logic and Industrial Control Network management.
-              </li>
+              <li data-i18n="resume.job5.b1">Proficient in working with classic controller systems, adeptly managing contactors, relays, sensors, and timers.</li>
+              <li data-i18n="resume.job5.b2">Skilled in PLC with expertise in Ladder Programming Logic and industrial control network management.</li>
             </ul>
           </div>
         </div>
@@ -329,69 +456,286 @@
     <div class="container cc-experience" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Personal Project</h2>
+        <h2 data-i18n="projects.title">Projects</h2>
       </div>
+
+      <h3 class="projects-group-title" data-i18n="projects.group.web">Web Development &amp; Cloud</h3>
+
       <div class="card">
         <div class="row">
-          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body cc-experience-header">
-              <h4>Robot for overcoming obstacles and barriers.
-              <br>2022</h4>
-            <br><br><br><br><br>
+              <h4 data-i18n="projects.solar.title">Alhadi Solar &mdash; Company Website<br>2025</h4>
             </div>
           </div>
           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body">
-              <div class="h5"> Mission: Create a robot controlled by Arduino to operate autonomously using artificial intelligence and machine learning algorithms. </div>
-              <p>
-                Plan and design the robot, specifying its type, size, and number of wheels. Gather necessary materials, including Arduino board, motors, wheels, and sensors.
+              <div class="h5" data-i18n="projects.solar.mission">Mission: Build and deploy a responsive, multi-page company website with content management and customer contact tools.</div>
+              <p data-i18n="projects.solar.desc">Responsive, multi-page web application with a content management panel, dark mode and WhatsApp integration; built with a Python (Flask) backend and deployed on Render.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">SQLAlchemy</span><span class="tech-tag">Render</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/Solar-Solution" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                <a href="https://solar-solution.onrender.com/" target="_blank" rel="noopener"><i class="bx bx-link-external"></i> <span data-i18n="projects.link.live">Live Site</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.aws.title">AWS Microservices Template<br>2025</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.aws.mission">Mission: Production-ready starter for building microservices on AWS using serverless and containerized approaches.</div>
+              <p data-i18n="projects.aws.desc">REST API template built for production, combining AWS Lambda + API Gateway with ECS Fargate, including RDS and S3 integration; deployed via the Serverless Framework and AWS CDK, with a CI/CD build pipeline and SonarQube code quality checks.</p>
+              <div>
+                <span class="tech-tag">AWS Lambda</span><span class="tech-tag">API Gateway</span><span class="tech-tag">ECS Fargate</span><span class="tech-tag">Flask</span><span class="tech-tag">Docker</span><span class="tech-tag">AWS CDK</span><span class="tech-tag">Serverless Framework</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/AWS-project" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.finance.title">Personal Finance Manager<br>2025</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.finance.mission">Mission: Desktop application to manage bank accounts and track income and expenses securely.</div>
+              <p data-i18n="projects.finance.desc">Desktop financial management tool with account management, color-coded transaction tracking, dashboard analytics and CSV import/export. Secured with PBKDF2 password hashing and packaged as a standalone executable with PyInstaller.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">Tkinter</span><span class="tech-tag">SQLite</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/Financial-Management-application" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.audio.title">Audio Transcription Pipeline<br>2024</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.audio.mission">Mission: Automate audio preparation and transcription for long recordings.</div>
+              <p data-i18n="projects.audio.desc">Converts AAC audio to standardized WAV (16 kHz / 16-bit), splits long recordings into chunks for better accuracy, and transcribes the content to Portuguese text using speech recognition.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">pydub</span><span class="tech-tag">SpeechRecognition</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/audio-transcription-processing" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.media.title">Desktop Media Tools<br>2024</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.media.mission">Mission: Simple desktop utilities for downloading and converting video/audio files.</div>
+              <p data-i18n="projects.media.desc">Two lightweight desktop tools built on FFmpeg: a video downloader with live progress and size estimates, and a converter that turns video files into MP3, WAV, AAC, OGG, FLAC, M4A or OPUS. Packaged as standalone Windows executables.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">Tkinter</span><span class="tech-tag">ttkbootstrap</span><span class="tech-tag">FFmpeg</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/Video-Downloader" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Video-Downloader</a>
+                <a href="https://github.com/zaidonaljbaae/Video-Audio-Converter" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Video-Audio-Converter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.pdf.title">PDF Analyzer<br>2023</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.pdf.mission">Mission: Extract structured data and images from PDF files automatically.</div>
+              <p data-i18n="projects.pdf.desc">Extracts text and embedded images from PDF files and applies regex pattern matching to locate specific data automatically.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">Regex</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/PDF_analyze" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.memory.title">Simon Memory Game<br>2023</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.memory.mission">Mission: Recreate the classic Simon color-sequence memory game in the browser.</div>
+              <p data-i18n="projects.memory.desc">Players repeat an increasingly long sequence of colors shown by the game, with button and sound feedback for each step.</p>
+              <div>
+                <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">jQuery</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/memory_game" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="projects-group-title" data-i18n="projects.group.robotics">Robotics, Electronics &amp; Computer Vision</h3>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.robot.title">Autonomous Robot (Arduino + Computer Vision)<br>2022</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.robot.mission">Mission: Create an Arduino-controlled robot that navigates independently, avoiding obstacles using sensors and computer vision.</div>
+              <p data-i18n="projects.robot.desc">
+                Planned and designed the robot, specifying its type, size, and number of wheels; assembled motors, wheels and sensors around an Arduino board.
                 <br>
-                Assemble the robot, connecting components to the Arduino board. Write code in Arduino language for movement and sensor control.
+                Wrote the control code for movement, speed/direction and sensor-based obstacle detection and avoidance (walls and objects).
                 <br>
-                Test and optimize the robot, ensuring correct functionality and adding sensors for obstacle detection in various environments.
+                Added computer-vision algorithms for environment recognition, then tested and tuned the robot for reliable, collision-free navigation.
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="row">
           <div class="col-md-3 " data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
             <div class="card-body cc-experience-header">
-              <h4>Classify images project.
-                <br>2022</h4>
-              <br><br><br><br>
+              <h4 data-i18n="projects.chess.title">Smart Chess Board (Arduino)<br>2022</h4>
             </div>
           </div>
           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body">
-              <div class="h5">Mission: Create a project to classify images using (RNN).</div>
-              <p STYLE="font-size: 20px"><a><strong> PYTHON</strong></a> <a class="bi bi-arrow-right"></a><a><strong>TensorFlow </strong></a><a class="bi bi-arrow-right"></a><a><strong>Keras </strong></a><a class="bi bi-arrow-right"></a><strong>model: ResNet152V2</strong>
-              <br>Create my dataset and training the model using the dataset.
-              <br>Validate the model, and test.
-                <br> Build blook in the program to classification the photo.</p>
+              <div class="h5" data-i18n="projects.chess.mission">Mission: Build a chess board that automatically detects piece positions and tracks moves in real time.</div>
+              <p data-i18n="projects.chess.desc">Each square has an LED/sensor that detects the presence of a piece; the Arduino reads the board state and streams it to a computer, which displays live piece movements in a graphical interface.</p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="row">
           <div class="col-md-3 " data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
             <div class="card-body cc-experience-header">
-              <h4>Face recognition system.
-                <br>2023</h4>
-              <br><br><br><br>
+              <h4 data-i18n="projects.facematch.title">Face Matching System<br>2023</h4>
             </div>
           </div>
           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body">
-              <div class="h5">Mission: Develop a face recognition system using Python.</div>
-              <p STYLE="font-size: 20px"><a><strong> PYTHON</strong></a> <a class="bi bi-arrow-right"></a><a><strong>OpenCV </strong></a><a class="bi bi-arrow-right"></a><a><strong>scikit-learn</strong></a>
-              <br>Detect faces and recognize them in real-time using a trained KNN classifier.</p>
+              <div class="h5" data-i18n="projects.facematch.mission">Mission: Compare two faces and score how similar they are using facial landmarks.</div>
+              <p data-i18n="projects.facematch.desc">Detects 68 facial landmarks with Dlib, crops and aligns the faces, visualizes structure with Delaunay triangulation, and computes an average landmark-distance similarity score.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">OpenCV</span><span class="tech-tag">Dlib</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/Face_matching" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.facelogin.title">Face Recognition Login<br>2023</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.facelogin.mission">Mission: Develop a real-time face recognition system for login/attendance using Python.</div>
+              <p data-i18n="projects.facelogin.desc">Detects and recognizes faces in real time from a webcam feed using a trained KNN classifier, with green/red visual feedback for recognized and unrecognized faces and optional attendance logging.</p>
+              <div>
+                <span class="tech-tag">Python</span><span class="tech-tag">OpenCV</span><span class="tech-tag">scikit-learn</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zaidonaljbaae/Login_using_face_recognetion" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.classify.title">Image Classification (ResNet152V2)<br>2022</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.classify.mission">Mission: Create a project to classify images using a convolutional neural network.</div>
+              <p><span style="font-size: 20px"><strong>PYTHON</strong> <i class="bi bi-arrow-right"></i> <strong>TensorFlow</strong> <i class="bi bi-arrow-right"></i> <strong>Keras</strong> <i class="bi bi-arrow-right"></i> <strong>Model: ResNet152V2</strong></span>
+              <br><span data-i18n="projects.classify.desc">Built a custom dataset and trained the model on it, then validated and tested it before wrapping it in a program block that classifies new photos.</span></p>
+              <p class="project-note" data-i18n="projects.note.private">Private project &mdash; not published on GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="100" data-aos-duration="200">
+            <div class="card-body cc-experience-header">
+              <h4 data-i18n="projects.chatbot.title">Voice Chatbot<br>2022</h4>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5" data-i18n="projects.chatbot.mission">Mission: Build a chatbot with speech recognition and voice responses for natural interaction.</div>
+              <p data-i18n="projects.chatbot.desc">Python chatbot using the Vosk speech-recognition model to listen and respond to the user by voice.</p>
+              <p class="project-note" data-i18n="projects.note.private">Private project &mdash; not published on GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section><!-- End Testimonials Section -->
 
@@ -400,7 +744,7 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Contact</h2>
+        <h2 data-i18n="contact.title">Contact</h2>
       </div>
 
       <div class="row mt-1">
@@ -410,13 +754,13 @@
 
             <div class="email">
               <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <a href = "mailto:ZaidonAljbaae@gmail.com">ZaidonAljbaae@gmail.com</a>
+              <h4 data-i18n="contact.email">Email:</h4>
+              <a href="mailto:ZaidonAljbaae@gmail.com">ZaidonAljbaae@gmail.com</a>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
+              <h4 data-i18n="contact.call">Call:</h4>
               <p>+55 12 997963819</p>
             </div>
 
@@ -429,26 +773,26 @@
           <form action="https://formsubmit.co/ZaidonAljbaae@gmail.com" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" data-i18n-placeholder="contact.form.name" placeholder="Your Name" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" data-i18n-placeholder="contact.form.email" placeholder="Your Email" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" data-i18n-placeholder="contact.form.subject" placeholder="Subject" required>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" rows="5" data-i18n-placeholder="contact.form.message" placeholder="Message" required></textarea>
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
+              <div class="loading" data-i18n="contact.form.loading">Loading</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="sent-message" data-i18n="contact.form.sent">Your message has been sent. Thank you!</div>
             </div>
             <div class="text-center">
               <input type="hidden" name="_captcha" value="false">
-              <button type="submit">Send Message</button></div>
+              <button type="submit" data-i18n="contact.form.submit">Send Message</button></div>
           </form>
 
         </div>
@@ -465,12 +809,14 @@
   <div class="container">
     <h3>Zaidon Aljbaae</h3>
     <div class="social-links">
+      <a href="https://github.com/zaidonaljbaae" target="_blank" rel="noopener" class="github"><i class="bx bxl-github"></i></a>
+      <a href="https://www.linkedin.com/in/zaidon-aljbaae-babb86365" target="_blank" rel="noopener" class="linkedin"><i class="bx bxl-linkedin-square"></i></a>
       <a href="https://t.me/ZaidonAljbaae" class="telegram"><i class="bx bxl-telegram"></i></a>
       <a href="https://www.facebook.com/zaidon.aljbaae" class="facebook"><i class="bx bxl-facebook"></i></a>
       <a href="https://instagram.com/zaidon_aljbaae?igshid=ZDdkNTZiNTM=" class="instagram"><i class="bx bxl-instagram"></i></a>
     </div>
     <div class="copyright">
-      &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+      &copy; <span data-i18n="footer.copyright">Copyright</span> <strong><span>Zaidon Aljbaae</span></strong>. <span data-i18n="footer.rights">All Rights Reserved</span>
     </div>
     <div class="credits">
       Designed by <a href="https://.com/">BootstrapMade</a>
@@ -498,6 +844,9 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<!-- Language switcher (English / Portuguese) -->
+<script src="assets/js/i18n.js"></script>
 
 </body>
 
