@@ -65,6 +65,12 @@
       "resume.lang.portuguese": "Portuguese",
       "resume.lang.intermediate": "Intermediate",
       "resume.experience": "Professional Experience",
+      "resume.job0.title": "Full-Stack Developer &amp; Technical Architect",
+      "resume.job0.location": "Independent, Remote",
+      "resume.job0.present": "Present",
+      "resume.job0.b1": "Designed and built the GravDyn web platform, making the project's gravitational modeling research tools accessible online.",
+      "resume.job0.b2": "Owned the platform end-to-end: REST APIs, React frontend, backend services, PostgreSQL database and Docker-based container infrastructure.",
+      "resume.job0.b3": "Turned the project's scientific software into a usable, deployable web application using Python (Flask, FastAPI), React.js, Node.js, relational databases and cloud infrastructure (AWS, Oracle).",
       "resume.job1.title": "Full-Stack Web Developer",
       "resume.job1.location": "Remote, São Paulo, Brazil",
       "resume.job1.present": "Present",
@@ -91,6 +97,10 @@
       "projects.group.web": "Web Development &amp; Cloud",
       "projects.group.robotics": "Robotics, Electronics &amp; Computer Vision",
       "projects.link.live": "Live Site",
+
+      "projects.gravdyn.title": "GravDyn Platform<br>2026",
+      "projects.gravdyn.mission": "Mission: Turn a research group's gravitational modeling software into a usable, deployable web platform.",
+      "projects.gravdyn.desc": "Full-Stack Developer &amp; Technical Architect for LINEA's GravDyn web platform, which makes the project's gravitational modeling research tools accessible online. Designed and built the REST APIs, React frontend, backend services, PostgreSQL database and Docker-based container infrastructure end-to-end.",
 
       "projects.solar.title": "Alhadi Solar &mdash; Company Website<br>2025",
       "projects.solar.mission": "Mission: Build and deploy a responsive, multi-page company website with content management and customer contact tools.",
@@ -135,15 +145,6 @@
       "projects.facelogin.title": "Face Recognition Login<br>2023",
       "projects.facelogin.mission": "Mission: Develop a real-time face recognition system for login/attendance using Python.",
       "projects.facelogin.desc": "Detects and recognizes faces in real time from a webcam feed using a trained KNN classifier, with green/red visual feedback for recognized and unrecognized faces and optional attendance logging.",
-
-      "projects.classify.title": "Image Classification (ResNet152V2)<br>2022",
-      "projects.classify.mission": "Mission: Create a project to classify images using a convolutional neural network.",
-      "projects.classify.desc": "Built a custom dataset and trained the model on it, then validated and tested it before wrapping it in a program block that classifies new photos.",
-      "projects.note.private": "Private project &mdash; not published on GitHub.",
-
-      "projects.chatbot.title": "Voice Chatbot<br>2022",
-      "projects.chatbot.mission": "Mission: Build a chatbot with speech recognition and voice responses for natural interaction.",
-      "projects.chatbot.desc": "Python chatbot using the Vosk speech-recognition model to listen and respond to the user by voice.",
 
       "contact.title": "Contact",
       "contact.email": "Email:",
@@ -222,6 +223,12 @@
       "resume.lang.portuguese": "Português",
       "resume.lang.intermediate": "Intermediário",
       "resume.experience": "Experiência Profissional",
+      "resume.job0.title": "Desenvolvedor Full-Stack &amp; Arquiteto Técnico",
+      "resume.job0.location": "Independente, Remoto",
+      "resume.job0.present": "Atual",
+      "resume.job0.b1": "Projetei e construí a plataforma web GravDyn, tornando as ferramentas de modelagem gravitacional do projeto acessíveis online.",
+      "resume.job0.b2": "Responsável pela plataforma de ponta a ponta: APIs REST, frontend em React, serviços de backend, banco de dados PostgreSQL e infraestrutura de contêineres com Docker.",
+      "resume.job0.b3": "Transformei o software científico do projeto em uma aplicação web utilizável e implantável, usando Python (Flask, FastAPI), React.js, Node.js, bancos de dados relacionais e infraestrutura em nuvem (AWS, Oracle).",
       "resume.job1.title": "Desenvolvedor Web Full-Stack",
       "resume.job1.location": "Remoto, São Paulo, Brasil",
       "resume.job1.present": "Atual",
@@ -248,6 +255,10 @@
       "projects.group.web": "Desenvolvimento Web &amp; Cloud",
       "projects.group.robotics": "Robótica, Eletrônica &amp; Visão Computacional",
       "projects.link.live": "Site Online",
+
+      "projects.gravdyn.title": "Plataforma GravDyn<br>2026",
+      "projects.gravdyn.mission": "Missão: Transformar o software de modelagem gravitacional de um grupo de pesquisa em uma plataforma web utilizável e implantável.",
+      "projects.gravdyn.desc": "Desenvolvedor Full-Stack e Arquiteto Técnico da plataforma web GravDyn do LINEA, que torna as ferramentas de pesquisa em modelagem gravitacional do projeto acessíveis online. Projetei e construí as APIs REST, o frontend em React, os serviços de backend, o banco de dados PostgreSQL e a infraestrutura de contêineres com Docker de ponta a ponta.",
 
       "projects.solar.title": "Alhadi Solar &mdash; Site da Empresa<br>2025",
       "projects.solar.mission": "Missão: Construir e implantar um site multipágina e responsivo para a empresa, com gerenciamento de conteúdo e ferramentas de contato com o cliente.",
@@ -292,15 +303,6 @@
       "projects.facelogin.title": "Login com Reconhecimento Facial<br>2023",
       "projects.facelogin.mission": "Missão: Desenvolver um sistema de reconhecimento facial em tempo real para login/presença usando Python.",
       "projects.facelogin.desc": "Detecta e reconhece rostos em tempo real a partir da webcam usando um classificador KNN treinado, com indicação visual verde/vermelho para rostos reconhecidos e não reconhecidos, além de registro de presença opcional.",
-
-      "projects.classify.title": "Classificação de Imagens (ResNet152V2)<br>2022",
-      "projects.classify.mission": "Missão: Criar um projeto para classificar imagens usando uma rede neural convolucional.",
-      "projects.classify.desc": "Criei um dataset próprio e treinei o modelo com ele, validei e testei, e por fim implementei um bloco no programa para classificar novas fotos.",
-      "projects.note.private": "Projeto privado &mdash; não publicado no GitHub.",
-
-      "projects.chatbot.title": "Chatbot por Voz<br>2022",
-      "projects.chatbot.mission": "Missão: Construir um chatbot com reconhecimento de fala e resposta por voz para interação natural.",
-      "projects.chatbot.desc": "Chatbot em Python utilizando o modelo de reconhecimento de fala Vosk para ouvir e responder ao usuário por voz.",
 
       "contact.title": "Contato",
       "contact.email": "Email:",
